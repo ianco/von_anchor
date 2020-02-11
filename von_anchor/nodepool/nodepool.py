@@ -122,7 +122,7 @@ class NodePool:
 
         LOGGER.debug('NodePool.open >>>')
 
-        await pool.set_protocol_version(self.protocol.indy())
+        await pool.set_protocol_version(self.protocol)
         LOGGER.info('Pool ledger %s set protocol %s', self.name, self.protocol)
 
         try:
